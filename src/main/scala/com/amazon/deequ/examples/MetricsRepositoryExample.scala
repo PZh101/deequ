@@ -61,7 +61,7 @@ object MetricsRepositoryExample extends App {
         .isNonNegative("numViews"))
       // We want to store the computed metrics for the checks in our repository
       .useRepository(repository)
-//      .saveOrAppendResult(resultKey)
+      .saveOrAppendResult(resultKey)
       .run()
 
     // We can now retrieve the metrics from the repository in different ways, e.g.:
